@@ -1,0 +1,15 @@
+# Класови атрибути и инстанционни методи
+class Person:
+    species = "mammal"            # класов атрибут – споделен
+
+    def __init__(self, first_name, last_name, age):
+        self.first_name = first_name   # инстанционни
+        self.last_name = last_name
+        self.age = age
+
+    def get_full_name(self):
+        return f"{self.first_name} {self.last_name}"
+
+me = Person("Peter", "Johnson", 64)
+print(me.species)                 # mammal
+print(me.get_full_name())         # Peter Johnson
